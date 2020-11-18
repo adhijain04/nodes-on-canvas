@@ -1,4 +1,4 @@
-# VERNACULAR.IO ASSIGNMENT
+# VERNACULAR.AI ASSIGNMENT
 
 This assignment is hosted on gh-pages and is available on (https://adhijain04.github.io/vernacular-assignment/)
 
