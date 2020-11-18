@@ -1,0 +1,104 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: unset;
+  font-weight: bold; }
+
+p {
+  margin: 0;
+  color: unset;
+  font-weight: normal; }
+
+a {
+  cursor: pointer;
+  color: #515356;
+  text-decoration: none; }
+
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif; }
+  body::-webkit-scrollbar {
+    display: none; }
+  body #root {
+    height: 100vh; }
+    body #root .aaic-dashboard, body #root .aaic-component {
+      width: 100%;
+      display: flex;
+      height: 100%; }
+    body #root .aaic-dashboard-responsive, body #root .aaic-component-responsive {
+      width: 100%;
+      height: 100%; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: unset; }
+
+button:hover {
+  cursor: pointer; }
+
+button:focus {
+  outline-color: transparent; }
+
+.header-container {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #c1c1c1; }
+  .header-container .save {
+    border: none;
+    cursor: pointer;
+    background: transparent; }
+    .header-container .save:focus {
+      outline: none; }
+    .header-container .save i {
+      font-size: 20px; }
+
+.left-container {
+  width: 10%;
+  padding: 1rem; }
+  .left-container .menu-item {
+    display: flex;
+    padding: 1rem;
+    background: #efefef;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    align-items: center;
+    border: solid 1px #c1c1c1; }
+    .left-container .menu-item:hover {
+      cursor: pointer; }
+    .left-container .menu-item .menu-name, .left-container .menu-item .menu-icon {
+      color: #515356; }
+    .left-container .menu-item .menu-icon {
+      margin-right: 1rem; }
+  .left-container .disabled:hover {
+    cursor: not-allowed; }
+
+.right-sidebar-container {
+  top: 64px;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  background: #ffffff; }
+  .right-sidebar-container .header-section {
+    padding: 1rem;
+    border-bottom: solid 1px #c1c1c1; }
+  .right-sidebar-container .input-container {
+    padding: 1rem; }
+    .right-sidebar-container .input-container textarea {
+      width: 100%;
+      min-height: 50px;
+      margin-bottom: 10px; }
+    .right-sidebar-container .input-container p {
+      color: #515356; }
+
+.canvas-wrapper {
+  display: flex;
+  height: calc(100vh - 61px); }
+  .canvas-wrapper .canvas-container {
+    width: 90%;
+    overflow: hidden;
+    position: relative; }
+    .canvas-wrapper .canvas-container .canvas {
+      cursor: grab;
+      background: #e1e1e1;
+      border: 2px solid tomato; }

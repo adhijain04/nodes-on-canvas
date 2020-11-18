@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/vernacular-assignment/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/vernacular-assignment/static/js/main.1e8c4858.chunk.js",
+    "main.js.map": "/vernacular-assignment/static/js/main.1e8c4858.chunk.js.map",
+    "runtime-main.js": "/vernacular-assignment/static/js/runtime-main.598b5bae.js",
+    "runtime-main.js.map": "/vernacular-assignment/static/js/runtime-main.598b5bae.js.map",
+    "static/js/2.cebce7a6.chunk.js": "/vernacular-assignment/static/js/2.cebce7a6.chunk.js",
+    "static/js/2.cebce7a6.chunk.js.map": "/vernacular-assignment/static/js/2.cebce7a6.chunk.js.map",
+    "static/js/3.ee7066fb.chunk.js": "/vernacular-assignment/static/js/3.ee7066fb.chunk.js",
+    "static/js/3.ee7066fb.chunk.js.map": "/vernacular-assignment/static/js/3.ee7066fb.chunk.js.map",
+    "index.html": "/vernacular-assignment/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/vernacular-assignment/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.cebce7a6.chunk.js.LICENSE.txt": "/vernacular-assignment/static/js/2.cebce7a6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.598b5bae.js",
+    "static/js/2.cebce7a6.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.1e8c4858.chunk.js"
+  ]
+}

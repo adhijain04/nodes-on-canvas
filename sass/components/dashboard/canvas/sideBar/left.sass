@@ -1,0 +1,20 @@
+.left-container
+    width: 10%
+    padding: $p1
+    .menu-item
+        +display-row
+        padding: $p1
+        background: $grey
+        margin-bottom: $p0
+        border-radius: 6px
+        align-items: center
+        border: solid 1px $dark-white
+        &:hover
+            cursor: pointer
+        .menu-name, .menu-icon
+            color: $dark-grey
+        .menu-icon
+            margin-right: $p1
+    .disabled
+        &:hover
+            cursor: not-allowed
