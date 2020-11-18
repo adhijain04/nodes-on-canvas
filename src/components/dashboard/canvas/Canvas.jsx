@@ -48,6 +48,7 @@ function Canvas() {
     ]);
     const [draggableCanvas, setDraggableCanvas] = useState(true);
     const [selectedNode, setSelectedNode] = useState(null);
+    const [menuDisabled, setDisabledMenu] = useState(false);
 
     // life-cycle hooks
     useEffect(() => {
@@ -99,7 +100,7 @@ function Canvas() {
 
     // functions
     const renderNodeHandler = (name) => {
-        let node;
+        let node, flag = false;
         let allNodes = [...nodes];
 
         if (name === "API") {
@@ -226,7 +227,23 @@ function Canvas() {
             }
         }
 
-        allNodes.push(node);
+        if (name === "HangUp") {
+            for (let i = 0; i < allNodes.length; i++) {
+                if (allNodes[i].name.includes("HangUp")) {
+                    setDisabledMenu(true);
+                    flag = true;
+                } else {
+                    flag = false;
+                }
+            }
+
+            if (!flag) {
+                allNodes.push(node);
+            }
+        } else {
+            allNodes.push(node);
+        }
+
         setNodes(allNodes);
     }
 
@@ -425,6 +442,7 @@ function Canvas() {
     return (
         <div className='canvas-wrapper'>
             <Left
+                menuDisabled={menuDisabled}
                 renderNodeHandler={renderNodeHandler}
             />
             <div

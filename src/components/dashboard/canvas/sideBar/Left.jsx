@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Left({ renderNodeHandler }) {
+function Left({ renderNodeHandler, menuDisabled }) {
     return (
         <div className='left-container'>
             <div className='menu-item' onClick={() => renderNodeHandler("Speak")}>
@@ -35,7 +35,7 @@ function Left({ renderNodeHandler }) {
                 <i className="fas fa-people-arrows menu-icon"></i>
                 <p className='menu-name'>Transfer</p>
             </div>
-            <div className='menu-item' onClick={() => renderNodeHandler("HangUp")}>
+            <div className={menuDisabled ? 'menu-item disabled' : "menu-item"} onClick={() => renderNodeHandler("HangUp")} disabled={menuDisabled}>
                 <i className="fas fa-phone-slash menu-icon"></i>
                 <p className='menu-name'>HangUp</p>
             </div>

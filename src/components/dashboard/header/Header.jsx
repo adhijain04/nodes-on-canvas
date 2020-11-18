@@ -5,7 +5,9 @@ function Header() {
         <div className='header-container'>
             <h2>Canvas</h2>
 
-            <button className='save'>Save</button>
+            <button className='save'>
+                <i className="fas fa-save"></i>
+            </button>
         </div>
     )
 }

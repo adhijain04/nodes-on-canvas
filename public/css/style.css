@@ -43,6 +43,14 @@ button:focus {
   align-items: center;
   justify-content: space-between;
   border-bottom: solid 1px #c1c1c1; }
+  .header-container .save {
+    border: none;
+    cursor: pointer;
+    background: transparent; }
+    .header-container .save:focus {
+      outline: none; }
+    .header-container .save i {
+      font-size: 20px; }
 
 .left-container {
   width: 10%;
@@ -61,13 +69,15 @@ button:focus {
       color: #515356; }
     .left-container .menu-item .menu-icon {
       margin-right: 1rem; }
+  .left-container .disabled:hover {
+    cursor: not-allowed; }
 
 .right-sidebar-container {
-  top: 0;
+  top: 64px;
   right: 0;
   width: 25%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   background: #ffffff; }
   .right-sidebar-container .header-section {
     padding: 1rem;
